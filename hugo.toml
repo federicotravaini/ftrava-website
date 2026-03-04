@@ -34,15 +34,16 @@ disableKinds = ['taxonomy', 'term']
         background-color: rgba(234, 67, 53, 0.12);
       }
       .social-icons-list .social-icon a[href*='pompetravaini.com'] {
-        background-color: rgba(255, 255, 255, 0.14);
+        color: #ff7a00;
+        background-color: rgba(255, 122, 0, 0.14);
       }
       .social-icons-list .social-icon a[href*='linkedin.com'] {
         color: #0a66c2;
         background-color: rgba(10, 102, 194, 0.14);
       }
       .social-icons-list .social-icon a[href*='x.com'] {
-        color: #111111;
-        background-color: rgba(120, 120, 120, 0.12);
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.12);
       }
       .social-icons-list .social-icon a[href*='itunes.apple.com'] {
         color: #b150e2;
@@ -51,11 +52,11 @@ disableKinds = ['taxonomy', 'term']
     </style>
   """
   socialIcons = [
-    {name = "email", url = "mailto:federico@travaini.xyz"},
-    {name = "website", url = "https://pompetravaini.com"},
-    {name = "easyapple", url = "http://itunes.apple.com/it/podcast/easyapple/id523499126"},
-    {name = "linkedin", url = "https://www.linkedin.com/in/federico-travaini/"},
-    {name = "twitter", url = "https://x.com/ftrava"}
+    {name = "contact-email", url = "mailto:federico@travaini.xyz"},
+    {name = "contact-company", url = "https://pompetravaini.com"},
+    {name = "contact-podcast", url = "http://itunes.apple.com/it/podcast/easyapple/id523499126"},
+    {name = "contact-linkedin", url = "https://www.linkedin.com/in/federico-travaini/"},
+    {name = "contact-x", url = "https://x.com/ftrava"}
   ]
 
 [menu]
