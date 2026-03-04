@@ -1,23 +1,17 @@
 baseURL = 'https://federico.travaini.xyz'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Federico Travaini | ftrava'
 theme = 'gokarna'
+disableKinds = ['taxonomy', 'term']
 
 [params]
-  footer = "The Marauders"
-  description = "Sky above, sand below and peace within"
+  footer = "Federico Travaini (ftrava)"
+  description = "Mechanical engineer, automation enthusiast, self-hosting geek, and podcaster."
   avatarURL = "/images/avatar_pixelated.png"
-  AvatarAltText = "avatar"
+  AvatarAltText = "Federico Travaini avatar"
   avatarSize = "size-m"
   socialIcons = [
-    {name = "twitter", url = "https://example.com"},
-    {name = "linkedin", url = "https://example.com"},
-    {name = "stackoverflow", url = "https://example.com"},
-    {name = "dribbble", url = "https://example.com"},
-    {name = "instagram", url = "https://example.com"},
-    {name = "twitch", url = "https://example.com"},
-    {name = "email", url = "mailto:example@example.com"},
-    {name = "mastodon", url = "mailto:example@example.com"}
+    {name = "linkedin", url = "https://www.linkedin.com"}
   ]
 
 [menu]
@@ -28,43 +22,19 @@ theme = 'gokarna'
     weight = 1
 
   [[menu.main]]
-    name = "Posts"
-    pre = "<span data-feather='book'></span>"
-    url = "/posts/"
+    name = "Contacts"
+    pre = "<span data-feather='at-sign'></span>"
+    url = "/links/"
     weight = 2
 
   [[menu.main]]
-    name = "Links"
-    pre = "<span data-feather='code'></span>"
-    url = "/links/"
+    name = "Projects"
+    pre = "<span data-feather='briefcase'></span>"
+    url = "/projects/"
     weight = 3
-
-  [[menu.main]]
-    name = "Tags"
-    pre = "<span data-feather='tag'></span>"
-    url = "/tags/"
-    weight = 4
-
-  [[menu.main]]
-    identifier = "github"
-    pre = "<span data-feather='github'></span>"
-    url = "https://github.com/526avijitgupta/gokarna"
-    weight = 5
-
-  [[menu.main]]
-    identifier = "buymeacoffee"
-    pre = "<span data-feather='coffee'></span>"
-    url = "https://www.buymeacoffee.com/avijitgupta"
-    weight = 6
-
-  [[menu.main]]
-    identifier = "rss"
-    pre = "<span data-feather='rss'></span>"
-    url = "/index.xml"
-    weight = 7
 
 [markup]
   [markup.tableOfContents]
     startLevel = 1
-    endLevel = 4
+    endLevel = 3
     ordered = false
