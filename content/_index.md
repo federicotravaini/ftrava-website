@@ -3,14 +3,27 @@ title: "Federico Travaini"
 type: page
 ---
 
-Mechanical engineer graduated from Politecnico di Milano, with a strong passion for technology and automation.
+I am **Federico Travaini** (`ftrava`), a mechanical engineer graduated from Politecnico di Milano with a strong passion for technology and automation.
 
-I am the Vice President of [Pompe Travaini](https://pompetravaini.com), where engineering and industrial reality meet innovation every day.
+I am Vice President at [Pompe Travaini](https://pompetravaini.com), where engineering, industry, and innovation meet every day.
 
-Outside work, I spend a lot of time on smart home projects and self-hosting, building reliable systems for everyday life.
+Outside work, I spend a lot of time on:
 
-I have been podcasting since 2010 on [EasyApple](https://easyapple.org), and yes, I am also a dedicated League of Legends player.
+- Home automation
+- Self-hosting
+- Building practical and reliable digital systems
+- Playing League of Legends
+
+I have also been podcasting since 2010 on [EasyApple](https://easyapple.org).
+
+### Direct contacts
+
+- Email: [federico@travaini.xyz](mailto:federico@travaini.xyz)
+- Company: [pompetravaini.com](https://pompetravaini.com)
+- LinkedIn: [federico-travaini](https://www.linkedin.com/in/federico-travaini/)
+- X / Twitter: [@ftrava](https://x.com/ftrava)
+- Podcast: [EasyApple on Apple Podcasts](http://itunes.apple.com/it/podcast/easyapple/id523499126)
+
+[![EasyApple logo](https://www.easypodcast.it/img/shows/easyapple.jpg)](http://itunes.apple.com/it/podcast/easyapple/id523499126)
 
 > "There is no spoon."
-
-Nickname: **ftrava**

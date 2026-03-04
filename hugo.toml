@@ -6,12 +6,16 @@ disableKinds = ['taxonomy', 'term']
 
 [params]
   footer = "Federico Travaini (ftrava)"
-  description = "Mechanical engineer, automation enthusiast, self-hosting geek, and podcaster."
+  description = "Mechanical engineer, automation enthusiast, self-hosting geek, and podcaster since 2010."
   avatarURL = "/images/avatar_pixelated.png"
   AvatarAltText = "Federico Travaini avatar"
   avatarSize = "size-m"
   socialIcons = [
-    {name = "linkedin", url = "https://www.linkedin.com"}
+    {name = "email", url = "mailto:federico@travaini.xyz"},
+    {name = "website", url = "https://pompetravaini.com"},
+    {name = "easyapple", url = "http://itunes.apple.com/it/podcast/easyapple/id523499126"},
+    {name = "linkedin", url = "https://www.linkedin.com/in/federico-travaini/"},
+    {name = "twitter", url = "https://x.com/ftrava"}
   ]
 
 [menu]
@@ -20,18 +24,6 @@ disableKinds = ['taxonomy', 'term']
     pre = "<span data-feather='home'></span>"
     url = "/"
     weight = 1
-
-  [[menu.main]]
-    name = "Contacts"
-    pre = "<span data-feather='at-sign'></span>"
-    url = "/links/"
-    weight = 2
-
-  [[menu.main]]
-    name = "Projects"
-    pre = "<span data-feather='briefcase'></span>"
-    url = "/projects/"
-    weight = 3
 
 [markup]
   [markup.tableOfContents]
