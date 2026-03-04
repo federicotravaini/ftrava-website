@@ -10,6 +10,50 @@ disableKinds = ['taxonomy', 'term']
   avatarURL = "/images/avatar_pixelated.png"
   AvatarAltText = "Federico Travaini avatar"
   avatarSize = "size-m"
+  customHeadHTML = """
+    <style>
+      .social-icons-list .social-icon a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 10px;
+        transition: transform 0.15s ease, background-color 0.15s ease;
+      }
+      .social-icons-list .social-icon a:hover {
+        transform: translateY(-1px);
+      }
+      .social-icons-list .social-icon a[href^='mailto:'] {
+        color: #ea4335;
+        background-color: rgba(234, 67, 53, 0.12);
+      }
+      .social-icons-list .social-icon a[href*='pompetravaini.com'] {
+        color: #ff7a00;
+        background-color: rgba(255, 122, 0, 0.14);
+      }
+      .social-icons-list .social-icon a[href*='linkedin.com'] {
+        color: #0a66c2;
+        background-color: rgba(10, 102, 194, 0.14);
+      }
+      .social-icons-list .social-icon a[href*='x.com'] {
+        color: #111111;
+        background-color: rgba(120, 120, 120, 0.12);
+      }
+      .social-icons-list .social-icon a[href*='itunes.apple.com'] {
+        color: #b150e2;
+        background-color: rgba(177, 80, 226, 0.14);
+      }
+      img[alt='EasyApple logo'] {
+        max-width: 160px;
+        border-radius: 14px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+      }
+      .markdown-content blockquote {
+        margin-top: 16px;
+        font-size: 1.1rem;
+      }
+    </style>
+  """
   socialIcons = [
     {name = "email", url = "mailto:federico@travaini.xyz"},
     {name = "website", url = "https://pompetravaini.com"},
