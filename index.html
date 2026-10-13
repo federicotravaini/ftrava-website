@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Federico Travaini</title>
+  <meta name="description" content="Federico Travaini — Milano, 1991." />
+  <meta name="author" content="Federico Travaini" />
+  <meta property="og:title" content="Federico Travaini" />
+  <meta property="og:description" content="Host di EasyApple · VP Pompetravaini · Ing. Meccanico" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://federico.travaini.xyz" />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar" aria-label="Navigazione principale">
+    <div class="nav-container">
+
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <svg class="nav-enso" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+          <path class="enso-path" d="M38,22 A16,16 0 1,1 24,6" stroke="url(#rg)" stroke-width="3.5" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#c42020"/>
+              <stop offset="100%" stop-color="#7a0f0f"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="nav-wordmark">FT</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#cv" class="nav-cta">CV</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <a href="#skills">Skills</a>
+    <a href="#cv">CV</a>
+  </nav>
+
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+    </div>
+
+    <div class="hero-content">
+
+      <!-- Logo -->
+      <div class="hero-logo-wrap" aria-label="Federico Travaini">
+        <div class="hero-avatar-wrap">
+          <img src="assets/avatar.png" alt="Avatar di Federico Travaini" class="hero-avatar" width="92" height="92" />
+          <div class="hero-avatar-ring" aria-hidden="true"></div>
+        </div>
+        <div class="hero-wordmark">
+          <span class="hero-first"><span class="hero-emboss">F</span>EDERICO</span>
+          <span class="hero-last"><span class="hero-emboss">TRAVA</span>INI</span>
+        </div>
+      </div>
+
+      <!-- Typed terminal line -->
+      <p class="hero-typed" aria-live="polite">
+        <span id="typed-text"></span><span class="cursor" aria-hidden="true">_</span>
+      </p>
+
+      <!-- Social bar -->
+      <div class="social-bar">
+        <a href="https://linkedin.com/in/federicotravaini" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://x.com/federicotravaini" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X / Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <span>Twitter</span>
+        </a>
+        <a href="https://easyapple.net" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="EasyApple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          <span>EasyApple</span>
+        </a>
+        <a href="mailto:federico.travaini@gmail.com" class="social-btn" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== LEAGUE OF LEGENDS ========== -->
+  <section id="league" class="passion-section lol-section">
+    <div class="lol-inner">
+
+      <div class="lol-text reveal">
+        <p class="lol-eyebrow">League of Legends</p>
+        <h2 class="lol-title">Living on the<br>Summoner's Rift.</h2>
+        <p class="lol-nickname">FEDERLCO</p>
+        <a class="lol-link" href="https://op.gg/lol/summoners/euw/F%20E%20D%20E%20R%20l%20C%20O-EUW" target="_blank" rel="noopener noreferrer">OP.GG</a>
+      </div>
+
+      <!-- SVG Summoner's Rift minimap + poster -->
+      <div class="lol-map-wrap reveal" aria-hidden="true">
+        <div class="lol-map-frame">
+          <svg class="lol-minimap" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="blueBaseGlow" cx="10%" cy="90%" r="40%">
+                <stop offset="0%" stop-color="#1e78f4" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#1e78f4" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="redBaseGlow" cx="90%" cy="10%" r="40%">
+                <stop offset="0%" stop-color="#e83a1a" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#e83a1a" stop-opacity="0"/>
+              </radialGradient>
+              <filter id="lolGlow" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="4" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+              <filter id="lolGlowSm" x="-60%" y="-60%" width="220%" height="220%">
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <rect width="280" height="280" fill="#04101a"/>
+            <rect width="280" height="280" fill="url(#blueBaseGlow)"/>
+            <rect width="280" height="280" fill="url(#redBaseGlow)"/>
+
+            <path d="M280 190 C240 190 200 155 160 140 C120 125 80 90 0 90"
+                  stroke="#0d3555" stroke-width="48" fill="none"/>
+            <path d="M280 190 C240 190 200 155 160 140 C120 125 80 90 0 90"
+                  stroke="#0f3f65" stroke-width="24" fill="none"/>
+            <path class="lol-river-shimmer"
+                  d="M280 190 C240 190 200 155 160 140 C120 125 80 90 0 90"
+                  stroke="rgba(30,120,200,0.18)" stroke-width="10" fill="none"
+                  stroke-dasharray="20 40"/>
+
+            <polyline points="22,258 22,22 258,22"
+                      stroke="#8a7a50" stroke-width="3.5" fill="none" opacity="0.65"/>
+            <polyline points="22,258 258,258 258,22"
+                      stroke="#8a7a50" stroke-width="3.5" fill="none" opacity="0.65"/>
+            <line x1="22" y1="258" x2="258" y2="22"
+                  stroke="#8a7a50" stroke-width="3.5" opacity="0.65"/>
+
+            <path d="M22,22 L22,120 L90,180 L22,258 L22,22" fill="#020c14" opacity="0.5"/>
+            <path d="M258,22 L258,160 L190,100 L258,22" fill="#020c14" opacity="0.5"/>
+
+            <rect x="18" y="110" width="9" height="9" rx="2" fill="#3a88f4" opacity="0.85"/>
+            <rect x="18" y="150" width="9" height="9" rx="2" fill="#3a88f4" opacity="0.7"/>
+            <rect x="78" y="198" width="9" height="9" rx="2" fill="#3a88f4" opacity="0.85"/>
+            <rect x="110" y="253" width="9" height="9" rx="2" fill="#3a88f4" opacity="0.85"/>
+            <rect x="150" y="253" width="9" height="9" rx="2" fill="#3a88f4" opacity="0.7"/>
+
+            <rect x="253" y="120" width="9" height="9" rx="2" fill="#e84030" opacity="0.85"/>
+            <rect x="253" y="160" width="9" height="9" rx="2" fill="#e84030" opacity="0.7"/>
+            <rect x="193" y="18" width="9" height="9" rx="2" fill="#e84030" opacity="0.85"/>
+            <rect x="120" y="18" width="9" height="9" rx="2" fill="#e84030" opacity="0.85"/>
+            <rect x="160" y="18" width="9" height="9" rx="2" fill="#e84030" opacity="0.7"/>
+            <rect x="195" y="73" width="9" height="9" rx="2" fill="#e84030" opacity="0.85"/>
+
+            <circle cx="224" cy="220" r="18" fill="#c86010" opacity="0.18"/>
+            <circle cx="224" cy="220" r="10" fill="none" stroke="#c86010" stroke-width="1.5" opacity="0.5">
+              <animate attributeName="r" values="10;15;10" dur="3s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.5;0.15;0.5" dur="3s" repeatCount="indefinite"/>
+            </circle>
+            <path d="M220 218 L224 212 L228 218 L224 224 Z"
+                  fill="#e87830" opacity="0.7"/>
+            <path d="M218 216 L224 220 L230 216" stroke="#e87830" stroke-width="1.5"
+                  fill="none" opacity="0.5"/>
+
+            <circle cx="58" cy="60" r="18" fill="#7722cc" opacity="0.18"/>
+            <circle cx="58" cy="60" r="10" fill="none" stroke="#9933ee" stroke-width="1.5" opacity="0.5">
+              <animate attributeName="r" values="10;16;10" dur="4s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+            </circle>
+            <path d="M52 63 L55 56 L58 61 L61 56 L64 63 Z"
+                  fill="#aa44ff" opacity="0.65"/>
+
+            <circle class="lol-nexus-ring-b" cx="22" cy="258" r="14"
+                    fill="none" stroke="#1e78f4" stroke-width="1.5" opacity="0.7"/>
+            <circle cx="22" cy="258" r="8" fill="#1e78f4" opacity="0.9" filter="url(#lolGlow)"/>
+            <circle cx="22" cy="258" r="4" fill="#99ccff"/>
+
+            <circle class="lol-nexus-ring-r" cx="258" cy="22" r="14"
+                    fill="none" stroke="#e84030" stroke-width="1.5" opacity="0.7"/>
+            <circle cx="258" cy="22" r="8" fill="#e84030" opacity="0.9" filter="url(#lolGlow)"/>
+            <circle cx="258" cy="22" r="4" fill="#ffaa88"/>
+
+            <circle cx="22" cy="200" r="5" fill="none" stroke="#1e78f4" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="70" cy="258" r="5" fill="none" stroke="#1e78f4" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="46" cy="230" r="5" fill="none" stroke="#1e78f4" stroke-width="1.2" opacity="0.6"/>
+
+            <circle cx="258" cy="80" r="5" fill="none" stroke="#e84030" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="210" cy="22" r="5" fill="none" stroke="#e84030" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="234" cy="50" r="5" fill="none" stroke="#e84030" stroke-width="1.2" opacity="0.6"/>
+
+            <g class="lol-champ" filter="url(#lolGlowSm)">
+              <circle r="7" fill="#1e78f4"/>
+              <circle r="3.5" fill="#99ccff"/>
+              <circle class="lol-ping" r="12" fill="none" stroke="#1e78f4" stroke-width="1" opacity="0"/>
+            </g>
+
+            <circle cx="140" cy="140" r="3.5" fill="#44eeaa" opacity="0.7">
+              <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.8s" repeatCount="indefinite"/>
+            </circle>
+
+            <rect width="280" height="280" rx="0"
+                  fill="none" stroke="#c89b3c" stroke-width="1.5" opacity="0.4"/>
+          </svg>
+          <!-- Corner decorations (LoL UI style) -->
+          <div class="lol-corner lol-corner-tl" aria-hidden="true"></div>
+          <div class="lol-corner lol-corner-tr" aria-hidden="true"></div>
+          <div class="lol-corner lol-corner-bl" aria-hidden="true"></div>
+          <div class="lol-corner lol-corner-br" aria-hidden="true"></div>
+        </div>
+        <div class="lol-portrait-frame">
+          <img
+            class="lol-portrait"
+            src="arcane.png"
+            alt="Federico Travaini in stile Arcane"
+            width="280"
+            height="280"
+            onerror="this.style.display='none';"
+          />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========== CV ========== -->
+  <section id="cv">
+    <div class="container">
+      <div class="cv-card reveal">
+        <div class="cv-content">
+          <p class="section-eyebrow">Curriculum Vitae</p>
+          <h2>Scarica il CV</h2>
+          <a href="assets/cv-federico-travaini.pdf" class="btn btn-primary" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </a>
+        </div>
+
+        <div class="cv-preview" aria-hidden="true">
+          <div class="cv-mock">
+            <div class="cv-mock-name"></div>
+            <div class="cv-mock-title"></div>
+            <div class="cv-mock-divider"></div>
+            <div class="cv-mock-section-label"></div>
+            <div class="cv-mock-line"></div>
+            <div class="cv-mock-line short"></div>
+            <div class="cv-mock-divider"></div>
+            <div class="cv-mock-section-label"></div>
+            <div class="cv-mock-line"></div>
+            <div class="cv-mock-line short"></div>
+            <div class="cv-mock-divider"></div>
+            <div class="cv-mock-tags">
+              <div class="cv-mock-tag"></div>
+              <div class="cv-mock-tag"></div>
+              <div class="cv-mock-tag"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/federicotravaini" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://x.com/federicotravaini" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://easyapple.net" target="_blank" rel="noopener noreferrer" aria-label="EasyApple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          </a>
+          <a href="mailto:federico.travaini@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+        <p class="footer-copy">© 2025 Federico Travaini</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

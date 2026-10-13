@@ -1,0 +1,5 @@
+Inserisci qui il file del tuo curriculum vitae con il nome:
+
+  cv-federico-travaini.pdf
+
+Il pulsante "Scarica CV" nella sezione CV del sito punterà a questo file.

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
-  <defs>
-    <clipPath id="clip">
-      <circle cx="12" cy="12" r="11"></circle>
-    </clipPath>
-  </defs>
-  <image href="/images/pompetravaini-favicon.png" x="1" y="1" width="22" height="22" clip-path="url(#clip)"></image>
-</svg>
