@@ -47,7 +47,7 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 25px;
   padding: 32px;
   transform: translateY(-10px);
 }
@@ -98,6 +98,18 @@ body::before {
 
 .avatar-picture { display: block; width: 100%; height: 100%; border-radius: 50%; }
 
+.bio {
+  display: grid;
+  gap: 7px;
+  max-width: min(100%, 420px);
+  text-align: center;
+}
+
+.bio p { margin: 0; }
+.bio-role { font-size: clamp(.92rem, 3.5vw, 1rem); font-weight: 600; color: #f1f1f3; }
+.bio-note { font-size: .9rem; line-height: 1.5; color: #aaaab2; }
+.bio-quote { padding-top: 2px; font-size: .78rem; letter-spacing: .06em; color: #d4545d; }
+
 .contacts {
   display: flex;
   align-items: center;
@@ -134,7 +146,7 @@ body::before {
 @keyframes red-ambience { to { opacity: .62; transform: translate(-50%, -50%) scale(1.08); } }
 
 @media (max-width: 420px) {
-  .profile { gap: 30px; padding: 24px; }
+  .profile { gap: 22px; padding: 24px; }
   .contacts { gap: 14px; }
 }
 
