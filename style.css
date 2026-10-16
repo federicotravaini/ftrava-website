@@ -19,7 +19,8 @@ body {
   min-height: 100svh;
   display: grid;
   place-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background:
     radial-gradient(ellipse at 50% 43%, rgba(105, 105, 118, .09), transparent 40%),
     #0b0b0d;
@@ -47,9 +48,8 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
-  padding: 32px;
-  transform: translateY(-10px);
+  width: min(100%, 384px);
+  padding: 40px 32px 48px;
 }
 
 .avatar-frame {
@@ -100,17 +100,26 @@ body::before {
 
 .bio {
   display: grid;
-  gap: 7px;
-  max-width: min(100%, 420px);
+  gap: 12px;
+  width: 100%;
+  margin-top: 32px;
   text-align: center;
 }
 
 .bio p { margin: 0; }
-.bio-role { font-size: clamp(.92rem, 3.5vw, 1rem); font-weight: 600; color: #f1f1f3; }
-.bio-note { font-size: .9rem; line-height: 1.5; color: #aaaab2; }
-.bio-quote { padding-top: 2px; font-size: .78rem; letter-spacing: .06em; color: #d4545d; }
+.bio-role { font-size: 1.125rem; font-weight: 500; line-height: 1.4; color: #f1f1f3; }
+.bio-note { font-size: .9rem; line-height: 1.6; color: #aaaab2; }
+.bio-quote {
+  margin: 20px 0 0;
+  font-size: .8125rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  color: #92929b;
+}
 
 .contacts {
+  margin-top: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,8 +155,10 @@ body::before {
 @keyframes red-ambience { to { opacity: .62; transform: translate(-50%, -50%) scale(1.08); } }
 
 @media (max-width: 420px) {
-  .profile { gap: 22px; padding: 24px; }
-  .contacts { gap: 14px; }
+  .profile { padding: 32px 24px 40px; }
+  .bio { margin-top: 28px; }
+  .bio-role { font-size: 1.0625rem; }
+  .contacts { gap: 14px; margin-top: 26px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
