@@ -1,6 +1,6 @@
 :root {
   color-scheme: dark;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: #0b0b0d;
   color: #f5f5f6;
   font-synthesis: none;
@@ -35,7 +35,7 @@ body::before {
   width: 68vmax;
   height: 68vmax;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(150, 20, 31, .16), rgba(104, 13, 24, .06) 38%, transparent 69%);
+  background: radial-gradient(circle, rgba(150, 20, 31, .07), rgba(104, 13, 24, .025) 38%, transparent 69%);
   filter: blur(24px);
   pointer-events: none;
   transform: translate(-50%, -50%) scale(.92);
@@ -48,13 +48,13 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: min(100%, 384px);
-  padding: 40px 32px 48px;
+  width: min(100%, 800px);
+  padding: 64px 28px 48px;
 }
 
 .avatar-frame {
   position: relative;
-  width: clamp(156px, 25vw, 220px);
+  width: clamp(112px, 14vw, 140px);
   aspect-ratio: 1;
   border-radius: 50%;
   isolation: isolate;
@@ -69,7 +69,8 @@ body::before {
 }
 
 .avatar-frame::before {
-  inset: -8px;
+  inset: -5px;
+  opacity: .45;
   z-index: -1;
   background: conic-gradient(from 0deg, transparent 0 68%, rgba(225, 35, 47, .08) 73%, rgba(255, 54, 64, .9) 81%, rgba(225, 35, 47, .14) 89%, transparent 95% 100%);
   filter: blur(1px);
@@ -100,26 +101,41 @@ body::before {
 
 .bio {
   display: grid;
-  gap: 12px;
+  gap: 22px;
   width: 100%;
-  margin-top: 32px;
+  margin-top: 40px;
   text-align: center;
 }
 
-.bio p { margin: 0; }
-.bio-role { font-size: 1.125rem; font-weight: 500; line-height: 1.4; color: #f1f1f3; }
-.bio-note { font-size: .9rem; line-height: 1.6; color: #aaaab2; }
+.bio p, .bio h1 { margin: 0; }
+.bio-role {
+  font-size: clamp(1.65rem, 5.5vw, 3.25rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -.045em;
+  color: #f5f5f7;
+}
+.bio-role span { color: #939398; }
+.bio .bio-note {
+  max-width: 440px;
+  margin-inline: auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: -.015em;
+  color: #a1a1a6;
+  text-wrap: balance;
+}
 .bio-quote {
-  margin: 20px 0 0;
-  font-size: .8125rem;
-  font-style: italic;
+  margin: 56px 0 0;
+  font-size: .75rem;
+  font-weight: 400;
   line-height: 1.5;
   text-align: center;
-  color: #92929b;
+  color: #85858b;
 }
 
 .contacts {
-  margin-top: 28px;
+  margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,11 +170,13 @@ body::before {
 @keyframes red-pulse { 50% { box-shadow: 0 0 30px rgba(225,35,47,.28); border-color: rgba(255,54,64,.38); } }
 @keyframes red-ambience { to { opacity: .62; transform: translate(-50%, -50%) scale(1.08); } }
 
-@media (max-width: 420px) {
-  .profile { padding: 32px 24px 40px; }
-  .bio { margin-top: 28px; }
-  .bio-role { font-size: 1.0625rem; }
-  .contacts { gap: 14px; margin-top: 26px; }
+@media (max-width: 480px) {
+  .profile { padding: 48px 22px 36px; }
+  .bio { margin-top: 32px; gap: 18px; }
+  .bio-note span { display: block; }
+  .bio .bio-note { max-width: 290px; font-size: .9375rem; }
+  .contacts { gap: 14px; margin-top: 28px; }
+  .bio-quote { margin-top: 44px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
