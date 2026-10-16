@@ -100,12 +100,12 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 13px;
+  gap: 16px;
 }
 
 .contact {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   display: grid;
   place-items: center;
   border: 1px solid rgba(255,255,255,.1);
@@ -124,7 +124,7 @@ body::before {
 .x-link:hover, .x-link:focus-visible { color: #000; border-color: #fff; background: #fff; }
 .podcast { color: #f28b24; border-color: rgba(242,139,36,.32); background: rgba(242,139,36,.09); }
 .podcast:hover, .podcast:focus-visible { color: #ffb45f; border-color: rgba(255,180,95,.62); background: rgba(242,139,36,.2); }
-.mail { width: 52px; height: 52px; margin-left: 7px; color: #ff6570; background: rgba(220, 38, 52, .13); border-color: rgba(255, 83, 96, .42); }
+.mail { color: #ff6570; background: rgba(220, 38, 52, .13); border-color: rgba(255, 83, 96, .42); }
 .mail:hover, .mail:focus-visible { color: #fff; background: #c92534; border-color: #ef4653; }
 
 @keyframes red-orbit { to { transform: rotate(360deg); } }
@@ -133,9 +133,7 @@ body::before {
 
 @media (max-width: 420px) {
   .profile { gap: 30px; padding: 24px; }
-  .contacts { gap: 10px; }
-  .contact { width: 44px; height: 44px; }
-  .mail { width: 48px; height: 48px; margin-left: 5px; }
+  .contacts { gap: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
