@@ -6,13 +6,17 @@
   <meta name="theme-color" content="#0b0b0d">
   <meta name="description" content="Federico Travaini">
   <title>Federico Travaini</title>
-  <link rel="icon" href="assets/avatar-35-compleanno.jpg" type="image/jpeg">
+  <link rel="icon" href="assets/avatar-favicon.jpg" type="image/jpeg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="profile" aria-label="Contatti di Federico Travaini">
     <div class="avatar-frame">
-      <img class="avatar" src="assets/avatar-35-compleanno.jpg" alt="Ritratto di Federico Travaini">
+      <picture class="avatar-picture">
+        <source srcset="assets/avatar-35-compleanno.avif" type="image/avif">
+        <source srcset="assets/avatar-35-compleanno.webp" type="image/webp">
+        <img class="avatar" src="assets/avatar-35-compleanno.jpg" width="640" height="640" alt="Ritratto di Federico Travaini" fetchpriority="high" decoding="async">
+      </picture>
     </div>
     <nav class="contacts" aria-label="Contatti">
       <a class="contact linkedin" href="https://www.linkedin.com/in/federicotravaini" aria-label="LinkedIn">
